@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:100|Pacifico&display=swap" rel="stylesheet">    
+
+    <title>X-change: Live exchange rates</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header"><span  style="color:rgb(6, 73, 70)">X</span>-change</div>
+        <div class="container">
+            <div class ='result-div'>
+                
+                    <div class="currency-1 a">
+                        <label for="origin-currency">From</label>
+                         <select id="origin-currency" name="origin-currency" class="origin-currency">
+                            <option value="NGN">Naira(NGN)</option>
+                            <option value="USD">Dollar(USD)</option>
+                            <option value="EUR">Euro(EUR)</option>
+                            <option value="JPY">Japanese(JPY)</option>
+                            <option value="BTC">Bitcoin(BTC)</option>
+                            <option value="GBP">Pound sterling(GBP)</option>
+                            <option value="AUD">Australian dollar(AUD)</option>
+                            <option value="CAD">Canadian dollar(CAD)</option>
+                            <option value="CHF">Swiss franc(CHF)</option>
+                          </select>
+                    </div>
+                        <div class="input a">
+                            <input type="number" name="input" class="input-value" placeholder="Enter amount">
+                        </div>
+                   <div class="currency-2 a">
+                        <label for="convert-currency">To</label>
+                         <select id = "convert-currency" name="convert-currency" class="convert-currency">
+                            <option value="USD">Dollar(USD)</option>
+                            <option value="EUR">Euro(EUR)</option>
+                            <option value="JPY">Japanese(JPY)</option>
+                            <option value="BTC">Bitcoin(BTC)</option>
+                            <option value="GBP">Pound sterling(GBP)</option>
+                            <option value="AUD">Australian dollar(AUD)</option>
+                            <option value="CAD">Canadian dollar(CAD)</option>
+                            <option value="CHF">Swiss franc(CHF)</option>
+                            <option value="NGN">Naira(NGN)</option>
+                         </select>
+                    </div>
+                    
+                    <div class="btn a" ><button type="button" class="convert-button">Convert</button></div>
+                
+            </div>
+            <div  class ="conclusion">
+                <!--<div class="sub-result-2">Live exhange rates of top world currencies, including Bitcoin(BTC)</div>-->
+                <div class="sub-result-1 b">Live exhange rates</div><div class="sub-result-2 b">Top world currencies</div><div class="sub-result-3 b">Including Bitcoin</div>
+            </div>
+        </div>
+    </div>
+
+ 
+ <script src ="script.js"></script> 
+</body>
+</html>
