@@ -9,7 +9,7 @@ const domStrings = {
 
 document.querySelector(domStrings.button).addEventListener('click', async function() {
     if( document.querySelector(domStrings.inputValue).value !== ''){
-            fetch('http://data.fixer.io/api/latest?access_key=83a7c60af3de013ae3943daadfdf5b62')
+            fetch('https://data.fixer.io/api/latest?access_key=83a7c60af3de013ae3943daadfdf5b62')
     .then(res => res.json())
         .then(data => {
             const value = parseInt(document.querySelector(domStrings.inputValue).value);
