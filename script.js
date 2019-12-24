@@ -9,9 +9,10 @@ const domStrings = {
 
 document.querySelector(domStrings.button).addEventListener('click', async function() {
     if( document.querySelector(domStrings.inputValue).value !== ''){
-            fetch('https://data.fixer.io/api/latest?access_key=83a7c60af3de013ae3943daadfdf5b62')
+            fetch('http://data.fixer.io/api/latest?access_key=83a7c60af3de013ae3943daadfdf5b62')
     .then(res => res.json())
         .then(data => {
+            console.log(data);
             const value = parseInt(document.querySelector(domStrings.inputValue).value);
             const current = (data.rates[`${document.querySelector(domStrings.originalCurrency).value}`]);
             const convert = (data.rates[`${document.querySelector(domStrings.tbcCurrency).value}`]);
@@ -24,7 +25,7 @@ document.querySelector(domStrings.button).addEventListener('click', async functi
         //console.log(document.querySelector('.output-div'));
         
         }).catch(err => {
-        alert(err)
+        console.log(err)
     });  
     
 }else {
